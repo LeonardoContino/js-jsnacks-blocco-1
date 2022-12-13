@@ -16,3 +16,6 @@ Esempio: l'utente inserisce 1234, noi stampiamo 10.
 5.stampa in pagina la somma
 
 */
+const input = document.getElementById("input");
+const btn = document.getElementById("btn");
+const tot = document.getElementById("tot");

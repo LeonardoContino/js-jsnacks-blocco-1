@@ -8,3 +8,6 @@
 2. chiedi con un promt 10 numeri
 3.stampa i 10 numeri
 */
+
+const text = document.getElementById("text");
+console.log(text);

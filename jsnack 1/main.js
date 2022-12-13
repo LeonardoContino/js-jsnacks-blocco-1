@@ -10,4 +10,9 @@
 */
 
 const text = document.getElementById("text");
-console.log(text);
+// console.log(text);
+
+for (i = 0; i < 10; i++) {
+  let i = parseInt(prompt("che numeri vuoi?").trim());
+  console.log(i);
+}

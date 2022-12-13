@@ -19,7 +19,27 @@ In un array sono contenuti i nomi degli invitati alla festa del grande
 const input = document.getElementById("input");
 // console.log(input);
 const btn = document.getElementById("btn");
+
 // console.log(btn);
+let enter = document.getElementById("enter");
 
 const person = ["marco", "leo", "fabio", "gabri"];
 console.log(person);
+
+btn.addEventListener("click", function () {
+  const inputName = input.value;
+  console.log(inputName);
+
+  let isAuto = false;
+  enter.innerText = "";
+
+  for (i = 0; i < person.length; i++) {
+    const currentname = person[i];
+    console.log(currentname);
+    if (currentname === inputName) {
+      isAuto = true;
+      console.log(isAuto);
+      enter.innerText = "benvenuto";
+    }
+  }
+});

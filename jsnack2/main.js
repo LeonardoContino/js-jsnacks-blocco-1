@@ -33,7 +33,7 @@ btn.addEventListener("click", function () {
   let isAuto = false;
   enter.innerText = "";
 
-  for (i = 0; i < person.length; i++) {
+  for (i = 0; !isAuto && i < person.length; i++) {
     const currentname = person[i];
     console.log(currentname);
     if (currentname === inputName) {

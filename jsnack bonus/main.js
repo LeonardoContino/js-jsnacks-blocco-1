@@ -1,4 +1,4 @@
-console.log("js ok");
+// console.log("js ok");
 
 /*
 SNACK BONUS
@@ -19,3 +19,12 @@ Esempio: l'utente inserisce 1234, noi stampiamo 10.
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const tot = document.getElementById("tot");
+numbers = [input.value];
+
+btn.addEventListener("click", function () {
+  for (i = 0; i < numbers.lenght; i++) {
+    let sum = 0;
+    sum += numbers[i];
+    console.log(sum);
+  }
+});

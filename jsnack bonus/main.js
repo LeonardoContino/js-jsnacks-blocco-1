@@ -19,12 +19,20 @@ Esempio: l'utente inserisce 1234, noi stampiamo 10.
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const tot = document.getElementById("tot");
-numbers = [input.value];
 
 btn.addEventListener("click", function () {
-  for (i = 0; i < numbers.lenght; i++) {
+  numbers = input.value;
+  let result = "";
+
+  if (isNaN(numbers) || numbers.length !== 4) {
+    result = "il valori non sono numeri o non sono 4";
+  } else {
     let sum = 0;
-    sum += numbers[i];
-    console.log(sum);
+    for (let i = 0; i < numbers.length; i++) {
+      sum += parseInt(numbers[i]);
+    }
+    result = "la somma è" + sum;
   }
+
+  tot.innerText = result;
 });
